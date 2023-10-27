@@ -1,10 +1,11 @@
 import Hero from "../components/layouts/hero";
+import Work from "../components/layouts/work";
 import LinkText from "../components/ui/link";
 
 export default function Home() {
   return (
     <>
-      <Hero>
+      <Hero className="border-b border-dashed pb-6">
         <div className="heading mb-8">
           <h1 className="text-lg font-medium mb-2 text-neutral-700">
             Sumit Singh{" "}
@@ -18,8 +19,8 @@ export default function Home() {
           <p className="mb-8">
             Crafting beautiful interfaces, components and experiences for the
             web with a focus on ux design and branding. Frontend Engineer at{" "}
-            <LinkText href="https://www.dunolabs.in" target="_blank">
-              dunolabs
+            <LinkText href="https://www.dunolabs.in" isExternal={true}>
+              Dunolabs
             </LinkText>
           </p>
           <p>
@@ -32,6 +33,7 @@ export default function Home() {
           </p>
         </div>
       </Hero>
+      <Work />
     </>
   );
 }

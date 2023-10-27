@@ -4,8 +4,10 @@
 
 * {
   font-family: theme("fontFamily.poppins");
+  text-underline-offset: 0.1em;
 }
 
 :root {
   --fg: #fafbfc;
 }
+
