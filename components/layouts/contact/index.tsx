@@ -72,6 +72,7 @@ const Contact: React.FC = () => {
               {item.details.map((detail, index) => {
                 return (
                   <LinkText
+                    key={index}
                     href={detail.contactLink}
                     target="_blank"
                     isExternal={true}

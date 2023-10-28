@@ -85,7 +85,10 @@ const TechFlex = () => {
                 <div className="">
                   {item.skills.map((skill, index) => {
                     return (
-                      <div className="mb-3 flex flex-col gap-2 text-neutral-500" key={index}>
+                      <div
+                        className="mb-3 flex flex-col gap-2 text-neutral-500"
+                        key={index}
+                      >
                         <p>{skill}</p>
                       </div>
                     );
@@ -111,7 +114,10 @@ const TechFlex = () => {
                 <div className="">
                   {item.skills.map((skill, index) => {
                     return (
-                      <div className="mb-3 flex flex-col gap-2 text-neutral-500">
+                      <div
+                        className="mb-3 flex flex-col gap-2 text-neutral-500"
+                        key={index}
+                      >
                         <p>{skill}</p>
                       </div>
                     );
