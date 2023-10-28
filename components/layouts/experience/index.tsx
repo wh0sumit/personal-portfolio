@@ -41,11 +41,11 @@ const Experience: React.FC = () => {
             </p>
             <div className="experience-header">
               {item.details.map((detail, index) => (
-                <div className="border p-5 rounded-xl border-dashed my-3 hover:bg-neutral-50">
-                  <div
-                    key={index}
-                    className="  transition-all duration-300 flex justify-between items-center flex-wrap gap-2"
-                  >
+                <div
+                  className="border p-5 rounded-xl border-dashed my-3 hover:bg-neutral-50"
+                  key={index}
+                >
+                  <div className="  transition-all duration-300 flex justify-between items-center flex-wrap gap-2">
                     <h1 className="text-md font-medium text-start sm:text-end">
                       {detail.experienceTitle}
                     </h1>
