@@ -82,7 +82,7 @@ const WorkItem: React.FC<WorkDetail> = ({
 const Work: React.FC = () => {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 my-10 pb-6 border-b border-dashed">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 my-10">
         {WorkCategory.map((item, index) => {
           return (
             <div key={index}>

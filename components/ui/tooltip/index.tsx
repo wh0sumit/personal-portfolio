@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import tickSound from "../../../public/audio/tick.mp3";
+import React, { useEffect, useState } from "react";
 
 interface TooltipProps {
   text: string;
@@ -49,34 +50,43 @@ const Tooltip: React.FC<TooltipProps> = ({
     return positionStyles[position];
   };
 
+  useEffect(() => {
+    const audio = new Audio(tickSound);
+    if (showTooltip) {
+      audio.play();
+    }
+  }, [showTooltip]);
+
   return (
-    <div
-      style={{ position: "relative", display: "inline-block" }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      {children}
-      {showTooltip && (
-        <div
-          style={{
-            width: "max-content",
-            backgroundColor: "#f5f5f5",
-            padding: "0.5rem",
-            borderRadius: "0.5rem",
-            fontSize: "0.75rem",
-            zIndex: 1,
-            opacity: 0, // Initial opacity
-            animation: "pop 0.3s ease-in-out forwards",
-            ...(getTooltipStyle() as React.CSSProperties),
-          }}
-        >
-          <p className="text-xs font-medium">{text}</p>
-          {description && (
-            <p className="text-xs text-neutral-500">{description}</p>
-          )}
-        </div>
-      )}
-    </div>
+    <>
+      <div
+        style={{ position: "relative", display: "inline-block" }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {children}
+        {showTooltip && (
+          <div
+            style={{
+              width: "max-content",
+              backgroundColor: "#f5f5f5",
+              padding: "0.5rem",
+              borderRadius: "0.5rem",
+              fontSize: "0.75rem",
+              zIndex: 1,
+              opacity: 0, // Initial opacity
+              animation: "pop 0.3s ease-in-out forwards",
+              ...(getTooltipStyle() as React.CSSProperties),
+            }}
+          >
+            <p className="text-xs font-medium">{text}</p>
+            {description && (
+              <p className="text-xs text-neutral-500">{description}</p>
+            )}
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
-import Button from "../../ui/button";
-import LinkText from "../../ui/link";
-import Tooltip from "../../ui/tooltip";
+import Button from "@/components/ui/button";
+import LinkText from "@/components/ui/link";
+import Tooltip from "@/components/ui/tooltip";
 import * as SiIcons from "react-icons/si";
 
 interface TechIKnow {
@@ -61,7 +61,7 @@ const TechStack: React.FC = () => {
     <div className="pb-6 my-10">
       <h1 className="text-md font-medium mb-6 text-neutral-700">
         super cool tech stack i know about
-        <span className="text-neutral-500 font-normal ml-4  hidden sm:inline-block">
+        <span className="text-orange-500/90 font-normal ml-4  hidden sm:inline-block">
           :hover on the icons:
         </span>
       </h1>

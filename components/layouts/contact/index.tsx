@@ -76,7 +76,6 @@ const Contact: React.FC = () => {
                     href={detail.contactLink}
                     target="_blank"
                     isExternal={true}
-                    className="text-md font-medium text-neutral-700"
                   >
                     {item.name}
                   </LinkText>
