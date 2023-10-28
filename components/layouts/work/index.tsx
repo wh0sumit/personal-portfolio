@@ -40,12 +40,6 @@ const WorkCategory: WorkCategory[] = [
         link: "https://invoicetor.vercel.app",
         isExternal: true,
       },
-      {
-        title: "Propack",
-        description: "Creative software agency based in India",
-        link: "https://www.dunolabs.in",
-        isExternal: true,
-      },
     ],
   },
   {

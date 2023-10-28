@@ -33,12 +33,14 @@ const Experience: React.FC = () => {
       {ExperienceCategory.map((item, index) => {
         return (
           <div key={index} className="my-10">
-            <h1 className="text-md font-medium text-neutral-700">
-              {item.name}
-            </h1>
-            <p className="text-sm text-neutral-500 mt-2 mb-6">
-              {item.description}
-            </p>
+            <div>
+              <h1 className="text-md font-medium text-neutral-700">
+                {item.name}
+              </h1>
+              <p className="text-sm text-neutral-500 mt-2 mb-6">
+                {item.description}
+              </p>
+            </div>
             <div className="experience-header">
               {item.details.map((detail, index) => (
                 <div
@@ -53,9 +55,15 @@ const Experience: React.FC = () => {
                       <h1 className="font-medium text-start sm:text-end">
                         {detail.experienceOrg.name}
                       </h1>
-                      <div className="text-neutral-400">
+                      <div className="text-neutral-400 text-sm text-start sm:text-end">
                         {detail.experienceStatus.startAt} -{" "}
-                        {detail.experienceStatus.endAt}
+                        {detail.experienceStatus.endAt === "present" ? (
+                          <span className="text-orange-500">
+                            {detail.experienceStatus.endAt}
+                          </span>
+                        ) : (
+                          detail.experienceStatus.endAt
+                        )}
                       </div>
                     </div>
                   </div>
@@ -65,7 +73,7 @@ const Experience: React.FC = () => {
                   <ul className="experience-description mt-5 flex flex-col items-start justify-start gap-2 pl-3">
                     {detail.experienceDescription.map((description, index) => (
                       <li
-                        className="font-normal text-zinc-500 text-sm list-disc list-outside"
+                        className="font-normal text-zinc-500 text-sm list-disc list list-outside"
                         key={index}
                       >
                         {description}

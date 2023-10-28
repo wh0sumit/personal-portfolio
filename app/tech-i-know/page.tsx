@@ -1,60 +1,17 @@
+import Skills from "@/data/techstack.json";
+
 interface Skills {
   category: string;
   skills: string[];
 }
 
-const Development: Skills[] = [
-  {
-    category: "Languages",
-    skills: ["C & C++", "HTML & CSS", "JavaScript", "TypeScript", "PHP"],
-  },
-  {
-    category: "Databases & Query Languages",
-    skills: ["MySQL", "Mongo DB", "GraphQL (Query Language)", "SQL"],
-  },
-  {
-    category: "Libraries & Frameworks",
-    skills: [
-      "Bootstrap",
-      "Chakra UI",
-      "Shadcn",
-      "React & Redux",
-      "Materialize",
-      "Tailwind CSS",
-      "SCSS",
-      "NextJS",
-    ],
-  },
+const Development: Skills[] = Skills.Development;
+const Design: Skills[] = Skills.Design;
 
-  {
-    category: "Platforms",
-    skills: ["Github", "Netlify", "Vercel", "Firebase", "Supabase"],
-  },
-  {
-    category: "Tools",
-    skills: ["Git", "Vite", "Postman", "StoryBook", "Postman", "Figma"],
-  },
-];
-
-const Design: Skills[] = [
-  {
-    category: "Design",
-    skills: [
-      "UI Design",
-      "UX Design & Research",
-      "Design Systems",
-      "Design Thinking",
-    ],
-  },
-  {
-    category: "Tools",
-    skills: ["Figma"],
-  },
-  {
-    category: "UX Pyschology Rules",
-    skills: ["Hick's Law", "Fitt's Law", "Miller's Law", "Zeigarnik Effect"],
-  },
-];
+export const metadata = {
+  title: "super powers that I have",
+  description: "technical and design skills I have acquired over the years",
+};
 
 const TechFlex = () => {
   return (

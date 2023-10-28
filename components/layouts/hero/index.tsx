@@ -10,7 +10,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
   return (
     <div className={cn(className + "border-b border-dashed pb-6")}>
       <div className="heading mb-8">
-        <h1 className="text-lg cursor-pointer font-medium mb-2 text-neutral-700">
+        <h1 className="text-lg cursor-pointer font-medium mb-2 text-neutral-700 hover:text-orange-500 transition-all duration-300">
           Sumit Singh{" "}
         </h1>
 

@@ -1,0 +1,83 @@
+{
+     "Development": [
+          {
+               "category": "Languages",
+               "skills": [
+                    "C & C++",
+                    "HTML & CSS",
+                    "JavaScript",
+                    "TypeScript",
+                    "PHP"
+               ]
+          },
+          {
+               "category": "Databases & Query Languages",
+               "skills": [
+                    "MySQL",
+                    "Mongo DB",
+                    "GraphQL (Query Language)",
+                    "SQL"
+               ]
+          },
+          {
+               "category": "Libraries & Frameworks",
+               "skills": [
+                    "Bootstrap",
+                    "Chakra UI",
+                    "Shadcn",
+                    "React & Redux",
+                    "Materialize",
+                    "Tailwind CSS",
+                    "SCSS",
+                    "NextJS"
+               ]
+          },
+          {
+               "category": "Platforms",
+               "skills": [
+                    "Github",
+                    "Netlify",
+                    "Vercel",
+                    "Firebase",
+                    "Supabase"
+               ]
+          },
+          {
+               "category": "Tools",
+               "skills": [
+                    "Git",
+                    "Vite",
+                    "Postman",
+                    "StoryBook",
+                    "Postman",
+                    "Figma"
+               ]
+          }
+     ],
+     "Design": [
+          {
+               "category": "Design",
+               "skills": [
+                    "UI Design",
+                    "UX Design & Research",
+                    "Design Systems",
+                    "Design Thinking"
+               ]
+          },
+          {
+               "category": "Tools",
+               "skills": [
+                    "Figma"
+               ]
+          },
+          {
+               "category": "UX Pyschology Rules",
+               "skills": [
+                    "Hick's Law",
+                    "Fitt's Law",
+                    "Miller's Law",
+                    "Zeigarnik Effect"
+               ]
+          }
+     ]
+}

@@ -65,41 +65,43 @@ const TechStack: React.FC = () => {
           :hover on the icons:
         </span>
       </h1>
-      {
-        <div className="grid grid-cols-6 gap-2 mb-6 ">
-          {TechIKnow.map((item, index) => {
-            return (
-              <div key={index}>
-                {item.icon ? (
-                  <Tooltip
-                    text={item.name}
-                    description={item.description}
-                    position="top"
-                  >
-                    <div className="p-3 rounded-full bg-neutral-50 my-3 cursor-pointer">
-                      <div className="flex flex-col items-center justify-center text-2xl ">
-                        {item.icon}
-                      </div>
+
+      <div className="grid grid-cols-6 gap-2 mb-6 ">
+        {TechIKnow.map((item, index) => {
+          return (
+            <div key={index}>
+              {item.icon ? (
+                <Tooltip
+                  text={item.name}
+                  description={item.description}
+                  position="top"
+                >
+                  <div className="p-3 rounded-full bg-neutral-50 my-3 cursor-pointer">
+                    <div className="flex flex-col items-center justify-center text-2xl ">
+                      {item.icon}
                     </div>
-                  </Tooltip>
-                ) : (
-                  <h1 className="text-md font-medium mb-6 text-neutral-700">
-                    {item.name}
-                  </h1>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      }
-      <p className="text-md text-neutral-500">
-        This is not an exhaustive list.
-      </p>
-      <p className="text-md text-neutral-500 mb-6">
-        I'm always learning new things and I try to keep this list updated.
-      </p>
+                  </div>
+                </Tooltip>
+              ) : (
+                <h1 className="text-md font-medium mb-6 text-neutral-700">
+                  {item.name}
+                </h1>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      <div>
+        <p className="text-md text-neutral-500">
+          This is not an exhaustive list.
+        </p>
+        <p className="text-md text-neutral-500 mb-6 mt-2">
+          I'm always learning new things and I try to keep this list updated.
+        </p>
+      </div>
       <LinkText className="mb-6" href="/tech-i-know" isExternal={false}>
-        explore other tech i know{" "}
+        tech i know
       </LinkText>
     </div>
   );

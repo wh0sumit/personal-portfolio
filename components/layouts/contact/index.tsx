@@ -51,8 +51,16 @@ const ContactCategory: ContactCategory[] = [
 const Contact: React.FC = () => {
   return (
     <div>
-      <h1 className="text-md font-medium text-neutral-700 mb-6">
-        You can reach me out at:{" "}
+      <h1 className=" text-md font-medium text-neutral-700 mb-6">
+        You can reach me at:{" "}
+        <LinkText
+          href="https://twitter.com/wh0sumit"
+          target="_blank"
+          isExternal={true}
+        >
+          @wh0sumit
+        </LinkText>{" "}
+        or{" "}
         <LinkText
           href="mailto:wh0sumit.work@gmail.com"
           target="_blank"
@@ -61,6 +69,10 @@ const Contact: React.FC = () => {
           wh0sumit.work@gmail.com
         </LinkText>
       </h1>
+      <p className="text-neutral-500 mb-6">
+        I'm currently open to new opportunities, if you have any questions or
+        just want to say hi, feel free to contact me using the links below.
+      </p>
       <h1 className="text-md font-medium text-neutral-700 mb-6">
         Or you can find me on socials :
       </h1>

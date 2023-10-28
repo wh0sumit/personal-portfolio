@@ -18,24 +18,22 @@ const LinkText: React.FunctionComponent<LinkTextProps> = ({
   if (isExternal === true) {
     return (
       <>
-        <div className="group inline-block">
-          <Link
-            className={cn(
-              "underline decoration-orange-500/30 text-neutral-500",
-              className
-            )}
-            {...attr}
-            target={target}
-          >
-            <span>{attr?.children}</span>
-            <ArrowUpRight
-              className="inline group-hover:text-orange-500 group-hover:translate-x-1 
+        <Link
+          className={cn(
+            "underline group inline-block decoration-orange-500/30 hover:decoration-orange-500/60 text-neutral-500",
+            className
+          )}
+          {...attr}
+          target={target}
+        >
+          <span>{attr?.children}</span>
+          <ArrowUpRight
+            className="inline group-hover:text-orange-500 hover:decoration-orange-500/60 group-hover:translate-x-1 
             transition duration-300 ease-in-out transform
             "
-              size={16}
-            />
-          </Link>
-        </div>
+            size={16}
+          />
+        </Link>
       </>
     );
   }
@@ -43,7 +41,7 @@ const LinkText: React.FunctionComponent<LinkTextProps> = ({
     <>
       <Link
         className={cn(
-          "underline decoration-orange-500/30 text-neutral-500",
+          "underline decoration-orange-500/30 hover:decoration-orange-500/60 text-neutral-500",
           className
         )}
         {...attr}

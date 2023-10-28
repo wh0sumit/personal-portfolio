@@ -5,7 +5,16 @@ import ViewContainer from "../components/layouts/view-container";
 import Layout from "../components/layouts";
 
 export const metadata: Metadata = {
-  title: "Sumit Singh",
+  title: {
+    default: "Sumit Singh",
+    template: "%s | Sumit Singh",
+  },
+  description: "Hey!, I am a frontend engineer with a focus on ux design.",
+  twitter: {
+    card: "summary_large_image",
+    site: "@wh0sumit",
+    creator: "@wh0sumit",
+  },
 };
 
 export default function RootLayout({
