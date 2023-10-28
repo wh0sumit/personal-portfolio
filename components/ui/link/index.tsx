@@ -17,14 +17,28 @@ const LinkText: React.FunctionComponent<LinkTextProps> = ({
 }) => {
   if (isExternal === true) {
     return (
-      <Link className={cn("underline", className)} {...attr} target={target}>
+      <Link
+        className={cn(
+          "underline decoration-neutral-500 text-neutral-500",
+          className
+        )}
+        {...attr}
+        target={target}
+      >
         <span>{attr?.children}</span>
-        <ArrowUpRight className="inline ml-1" size={16} />
+        <ArrowUpRight className="inline ml-1 " size={16} />
       </Link>
     );
   }
   return (
-    <Link className={cn("underline", className)} {...attr} target={target}>
+    <Link
+      className={cn(
+        "underline decoration-neutral-500 text-neutral-500",
+        className
+      )}
+      {...attr}
+      target={target}
+    >
       <span>{attr?.children}</span>
     </Link>
   );

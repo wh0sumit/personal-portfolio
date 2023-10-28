@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ViewContainer from "../components/layouts/view-container";
+import Layout from "../components/layouts";
 
 export const metadata: Metadata = {
   title: "Sumit Singh",
@@ -25,7 +26,9 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <ViewContainer>{children}</ViewContainer>
+        <Layout>
+          <ViewContainer>{children}</ViewContainer>
+        </Layout>
       </body>
     </html>
   );

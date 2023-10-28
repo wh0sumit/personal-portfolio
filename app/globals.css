@@ -5,9 +5,28 @@
 * {
   font-family: theme("fontFamily.poppins");
   text-underline-offset: 0.1em;
+  text-decoration-thickness: 0.1em;
+  text-decoration-skip-ink: none;
+  text-transform: lowercase;
+}
+
+::selection {
+  background-color: #dfdfdf;
+  color: #1f2937;
 }
 
 :root {
   --fg: #fafbfc;
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 

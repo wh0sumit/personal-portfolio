@@ -70,11 +70,7 @@ const WorkItem: React.FC<WorkDetail> = ({
   return (
     <>
       <div className="mb-6 flex flex-col gap-2 text-neutral-500">
-        <LinkText
-          href={link}
-          isExternal={isExternal}
-          className="text-neutral-600"
-        >
+        <LinkText href={link} isExternal={isExternal}>
           {title}
         </LinkText>
         <p className="text-sm">{description}</p>

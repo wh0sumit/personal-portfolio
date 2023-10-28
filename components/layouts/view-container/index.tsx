@@ -1,4 +1,5 @@
 import { cn } from "@/lib/cn";
+import PageRoute from "../../ui/page-route";
 
 interface ViewContainerProps {
   children: React.ReactNode;
@@ -19,15 +20,18 @@ const ViewContainer: React.FC<ViewContainerProps> = ({
   className,
   attr,
 }) => (
-  <div
-    className={cn(
-      "px-4 mx-auto max-w-2xl sm:px-6 border-dashed border-b py-24",
-      className
-    )}
-    {...attr}
-  >
-    {children}
-  </div>
+  <>
+    <PageRoute />
+    <div
+      className={cn(
+        "px-4 mx-auto max-w-2xl sm:px-6 border-dashed border-b py-24",
+        className
+      )}
+      {...attr}
+    >
+      {children}
+    </div>
+  </>
 );
 
 export default ViewContainer;
