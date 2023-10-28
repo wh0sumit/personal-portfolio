@@ -1,6 +1,7 @@
 "use client";
 import tickSound from "../../../public/audio/tick.mp3";
 import React, { useEffect, useState } from "react";
+import useSound from "use-sound";
 
 interface TooltipProps {
   text: string;
@@ -15,6 +16,8 @@ const Tooltip: React.FC<TooltipProps> = ({
   description,
   position = "top",
 }) => {
+  const [play] = useSound(tickSound);
+
   const [showTooltip, setShowTooltip] = useState(false);
 
   const handleMouseEnter = () => setShowTooltip(true);
@@ -51,11 +54,10 @@ const Tooltip: React.FC<TooltipProps> = ({
   };
 
   useEffect(() => {
-    const audio = new Audio(tickSound);
-    if (showTooltip) {
-      audio.play();
+    if (showTooltip === true) {
+      play();
     }
-  }, [showTooltip]);
+  }, [showTooltip, play]);
 
   return (
     <>
