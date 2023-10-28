@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
         Or you can find me on socials :
       </h1>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {ContactCategory.map((item, index) => {
           return (
             <div key={index}>
