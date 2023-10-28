@@ -1,0 +1,115 @@
+[
+     {
+          "name": "founding teams",
+          "description": "I've founded and co-founded startups & communities",
+          "details": [
+               {
+                    "experienceTitle": "Founder & Community Manager",
+                    "experienceDescription": [
+                         "founded FF Community, a community for first generation founders & builders.",
+                         "I manage the design & development of the community website using Next.js, Tailwind CSS, and TypeScript.",
+                         "I also manage the community and its events & initiatives & took it from 0 to 20+ members in 10 days, even added YC funded startup founders to the community."
+                    ],
+                    "experienceOrg": {
+                         "name": "FF Community",
+                         "link": "https://www.ffcommunity.in",
+                         "websiteDisplayName": "ffcommunity.in"
+                    },
+                    "experienceStatus": {
+                         "startAt": "Oct. 2023",
+                         "endAt": "present"
+                    }
+               },
+               {
+                    "experienceTitle": "Founder & CEO",
+                    "experienceDescription": [
+                         "I founded Dunolabs, a creative software agency based in India.",
+                         "I manage the design & development of the company website and clients websites using various technologies like Next.js, Tailwind CSS, TypeScript and Figma for design & prototyping.",
+                         "I also manage the company and its clients & took it from 0 to 5+ clients in 2 months and successfully delivered 2 design & development projects in 2 months, and 2 more are in progress.",
+                         "worked with clients from India & Abu Dhabi, UAE."
+                    ],
+                    "experienceOrg": {
+                         "name": "Dunolabs",
+                         "link": "https://www.dunolabs.in",
+                         "websiteDisplayName": "dunolabs.in"
+                    },
+                    "experienceStatus": {
+                         "startAt": "july 2023",
+                         "endAt": "present"
+                    }
+               },
+               {
+                    "experienceTitle": "Founding Member & Lead Engineer",
+                    "experienceDescription": [
+                         "founded HEKORS Community, a community for developers & designers to learn & grow together.",
+                         "Helping students & professionals to learn & grow together by sharing knowledge & resources.",
+                         "I also manage the community and its events & initiatives & took it from 0 to 100+ members in 2 days, students from 5+ countries joined the community."
+                    ],
+                    "experienceOrg": {
+                         "name": "HEKORS Community",
+                         "link": "https://www.hekors.com",
+                         "websiteDisplayName": "hekors.com"
+                    },
+                    "experienceStatus": {
+                         "startAt": "Nov. 2020",
+                         "endAt": "present"
+                    }
+               }
+          ]
+     },
+     {
+          "name": "work & internship experience",
+          "description": "I've worked with startups & companies as a freelancer & intern",
+          "details": [
+               {
+                    "experienceTitle": "SDE Intern",
+                    "experienceDescription": [
+                         "I created a lot of beautiful components using react, nextjs, and scss to make the product more user friendly; unitylabs offers a suite of managed cloud based infrastructure & platform solutions for lead generation, web scraping, and data analysis.",
+                         "I developed components that directly interface with the backend APIs using tables and charts in dashboard pages ",
+                         "Throughout the internship, I have gained a lot of knowledge and made several valuable contributions."
+                    ],
+                    "experienceOrg": {
+                         "name": " Unitylabs.ai",
+                         "link": "#",
+                         "websiteDisplayName": "#"
+                    },
+                    "experienceStatus": {
+                         "startAt": "Feb 2022",
+                         "endAt": "May 2022"
+                    }
+               },
+               {
+                    "experienceTitle": "Frontend Engineer",
+                    "experienceDescription": [
+                         "I ve worked with a team of developers where I contributed some valuable insights to projects. Using my skills in debugging, I checked code, improved code, and enhanced the functionality and user experience of web applications",
+                         "Developed a design system using an atomic design model with the design team. "
+                    ],
+                    "experienceOrg": {
+                         "name": "Vector 32",
+                         "link": "#",
+                         "websiteDisplayName": "#"
+                    },
+                    "experienceStatus": {
+                         "startAt": "Feb 2022",
+                         "endAt": "May 2022"
+                    }
+               },
+               {
+                    "experienceTitle": "UI Developer",
+                    "experienceDescription": [
+                         "I ve worked with a team of web designers, backend developers, and UX designers to meet project goals and create better user experiences.",
+                         "I have worked on multiple projects and managed to meet the needs of clients."
+                    ],
+                    "experienceOrg": {
+                         "name": "Angel AI",
+                         "link": "#",
+                         "websiteDisplayName": "#"
+                    },
+                    "experienceStatus": {
+                         "startAt": "Nov 2021",
+                         "endAt": "Jan 2022"
+                    }
+               }
+          ]
+     }
+]

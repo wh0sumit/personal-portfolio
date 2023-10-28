@@ -1,5 +1,5 @@
 import { cn } from "@/lib/cn";
-import LinkText from "../../ui/link";
+import LinkText from "@/components/ui/link";
 
 interface HeroProps {
   className?: string;
@@ -10,9 +10,10 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
   return (
     <div className={cn(className + "border-b border-dashed pb-6")}>
       <div className="heading mb-8">
-        <h1 className="text-lg font-medium mb-2 text-neutral-700">
+        <h1 className="text-lg cursor-pointer font-medium mb-2 text-neutral-700">
           Sumit Singh{" "}
         </h1>
+
         {/* <p className="text-md text-neutral-500 ">
             Frontend Engineer & Designer
           </p> */}

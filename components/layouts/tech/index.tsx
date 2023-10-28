@@ -61,7 +61,7 @@ const TechStack: React.FC = () => {
     <div className="pb-6 my-10">
       <h1 className="text-md font-medium mb-6 text-neutral-700">
         super cool tech stack i know about
-        <span className="text-neutral-500 font-normal ml-4 ">
+        <span className="text-neutral-500 font-normal ml-4  hidden sm:inline-block">
           :hover on the icons:
         </span>
       </h1>
@@ -71,7 +71,11 @@ const TechStack: React.FC = () => {
             return (
               <div key={index}>
                 {item.icon ? (
-                  <Tooltip text={item.name} description={item.description}>
+                  <Tooltip
+                    text={item.name}
+                    description={item.description}
+                    position="top"
+                  >
                     <div className="p-3 rounded-full bg-neutral-50 my-3 cursor-pointer">
                       <div className="flex flex-col items-center justify-center text-2xl ">
                         {item.icon}
@@ -88,7 +92,7 @@ const TechStack: React.FC = () => {
           })}
         </div>
       }
-      <p className="text-md text-neutral-500 mb-6">
+      <p className="text-md text-neutral-500">
         This is not an exhaustive list.
       </p>
       <p className="text-md text-neutral-500 mb-6">

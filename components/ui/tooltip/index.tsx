@@ -5,17 +5,48 @@ interface TooltipProps {
   text: string;
   description?: string;
   children: React.ReactNode;
+  position?: "top" | "bottom" | "left" | "right" | undefined;
 }
 
-const Tooltip: React.FC<TooltipProps> = ({ text, children, description }) => {
+const Tooltip: React.FC<TooltipProps> = ({
+  text,
+  children,
+  description,
+  position = "top",
+}) => {
   const [showTooltip, setShowTooltip] = useState(false);
 
-  const handleMouseEnter = () => {
-    setShowTooltip(true);
-  };
+  const handleMouseEnter = () => setShowTooltip(true);
+  const handleMouseLeave = () => setShowTooltip(false);
 
-  const handleMouseLeave = () => {
-    setShowTooltip(false);
+  const getTooltipStyle = () => {
+    const positionStyles = {
+      bottom: {
+        position: "absolute",
+        left: "50%",
+        transform: "translateX(-50%)",
+        top: "100%",
+      },
+      left: {
+        position: "absolute",
+        right: "100%",
+        top: "50%",
+        transform: "translateY(-50%)",
+      },
+      right: {
+        position: "absolute",
+        left: "100%",
+        top: "50%",
+        transform: "translateY(-50%)",
+      },
+      top: {
+        position: "absolute",
+        left: "50%",
+        transform: "translateX(-50%)",
+        bottom: "100%",
+      },
+    };
+    return positionStyles[position];
   };
 
   return (
@@ -28,10 +59,6 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children, description }) => {
       {showTooltip && (
         <div
           style={{
-            position: "absolute",
-            bottom: "100%",
-            left: "50%",
-            transform: "translateX(-50%)",
             width: "max-content",
             backgroundColor: "#f5f5f5",
             padding: "0.5rem",
@@ -39,11 +66,14 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children, description }) => {
             fontSize: "0.75rem",
             zIndex: 1,
             opacity: 0, // Initial opacity
-            animation: "pop 0.3s ease-in-out forwards", // Add animation
+            animation: "pop 0.3s ease-in-out forwards",
+            ...(getTooltipStyle() as React.CSSProperties),
           }}
         >
           <p className="text-xs font-medium">{text}</p>
-          <p className="text-xs text-neutral-500">{description}</p>
+          {description && (
+            <p className="text-xs text-neutral-500">{description}</p>
+          )}
         </div>
       )}
     </div>
