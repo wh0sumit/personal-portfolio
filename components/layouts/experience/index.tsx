@@ -37,7 +37,7 @@ const Experience: React.FC = () => {
               <h1 className="text-md font-medium text-neutral-700">
                 {item.name}
               </h1>
-              <p className="text-sm text-neutral-500 mt-2 mb-6">
+              <p className="text-md text-neutral-500 mt-2 mb-6">
                 {item.description}
               </p>
             </div>
@@ -58,7 +58,7 @@ const Experience: React.FC = () => {
                       <div className="text-neutral-400 text-sm text-start sm:text-end">
                         {detail.experienceStatus.startAt} -{" "}
                         {detail.experienceStatus.endAt === "present" ? (
-                          <span className="text-orange-500">
+                          <span className="text-neutral-500">
                             {detail.experienceStatus.endAt}
                           </span>
                         ) : (
@@ -73,7 +73,7 @@ const Experience: React.FC = () => {
                   <ul className="experience-description mt-5 flex flex-col items-start justify-start gap-2 pl-3">
                     {detail.experienceDescription.map((description, index) => (
                       <li
-                        className="font-normal text-zinc-500 text-sm list-disc list list-outside"
+                        className="font-normal text-zinc-500 text-md list-disc list list-outside"
                         key={index}
                       >
                         {description}

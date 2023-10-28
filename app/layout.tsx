@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     site: "@wh0sumit",
     creator: "@wh0sumit",
   },
+  metadataBase: new URL("https://wh0sumit.vercel.app"),
 };
 
 export default function RootLayout({
@@ -25,10 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,200;1,6..72,300;1,6..72,400&display=swap"
-          rel="stylesheet"
-        />
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
           rel="stylesheet"

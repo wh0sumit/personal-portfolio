@@ -60,8 +60,8 @@ const TechStack: React.FC = () => {
   return (
     <div className="pb-6 my-10">
       <h1 className="text-md font-medium mb-6 text-neutral-700">
-        super cool tech stack i know about
-        <span className="text-orange-500/90 font-normal ml-4  hidden sm:inline-block">
+        Super cool tech stack i know about
+        <span className="text-neutral-500/90 font-normal ml-4  hidden sm:inline-block">
           :hover on the icons:
         </span>
       </h1>
@@ -100,9 +100,12 @@ const TechStack: React.FC = () => {
           I'm always learning new things and I try to keep this list updated.
         </p>
       </div>
-      <LinkText className="mb-6" href="/tech-i-know" isExternal={false}>
-        tech i know
-      </LinkText>
+      <div className="text-md text-neutral-500">
+        All the tech I know about is listed{" "}
+        <LinkText className="mb-6" href="/tech-i-know" isExternal={false}>
+          here
+        </LinkText>
+      </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@
   text-underline-offset: 0.1em;
   text-decoration-thickness: 0.1em;
   text-decoration-skip-ink: none;
-  text-transform: lowercase;
+  text-transform: none;
 }
 
 ::selection {

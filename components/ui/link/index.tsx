@@ -20,7 +20,7 @@ const LinkText: React.FunctionComponent<LinkTextProps> = ({
       <>
         <Link
           className={cn(
-            "underline group inline-block decoration-orange-500/30 hover:decoration-orange-500/60 text-neutral-500",
+            "underline group inline-block decoration-neutral-500/30 hover:decoration-neutral-500/60 text-neutral-500",
             className
           )}
           {...attr}
@@ -28,7 +28,7 @@ const LinkText: React.FunctionComponent<LinkTextProps> = ({
         >
           <span>{attr?.children}</span>
           <ArrowUpRight
-            className="inline group-hover:text-orange-500 hover:decoration-orange-500/60 group-hover:translate-x-1 
+            className="inline group-hover:text-neutral-500 hover:decoration-neutral-500/60 group-hover:translate-x-1 
             transition duration-300 ease-in-out transform
             "
             size={16}
@@ -41,7 +41,7 @@ const LinkText: React.FunctionComponent<LinkTextProps> = ({
     <>
       <Link
         className={cn(
-          "underline decoration-orange-500/30 hover:decoration-orange-500/60 text-neutral-500",
+          "underline decoration-neutral-500/30 hover:decoration-neutral-500/60 text-neutral-500",
           className
         )}
         {...attr}

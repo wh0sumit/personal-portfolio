@@ -1,12 +1,12 @@
 [
      {
-          "name": "founding teams",
+          "name": "Founding Teams Experience",
           "description": "I've founded and co-founded startups & communities",
           "details": [
                {
                     "experienceTitle": "Founder & Community Manager",
                     "experienceDescription": [
-                         "founded FF Community, a community for first generation founders & builders.",
+                         "Founded FF Community, a community for first generation founders & builders.",
                          "I manage the design & development of the community website using Next.js, Tailwind CSS, and TypeScript.",
                          "I also manage the community and its events & initiatives & took it from 0 to 20+ members in 10 days, even added YC funded startup founders to the community."
                     ],
@@ -17,7 +17,7 @@
                     },
                     "experienceStatus": {
                          "startAt": "Oct. 2023",
-                         "endAt": "present"
+                         "endAt": "Present"
                     }
                },
                {
@@ -34,14 +34,14 @@
                          "websiteDisplayName": "dunolabs.in"
                     },
                     "experienceStatus": {
-                         "startAt": "july 2023",
-                         "endAt": "present"
+                         "startAt": "July 2023",
+                         "endAt": "Present"
                     }
                },
                {
                     "experienceTitle": "Founding Member & Lead Engineer",
                     "experienceDescription": [
-                         "founded HEKORS Community, a community for developers & designers to learn & grow together.",
+                         "Founded HEKORS Community, a community for developers & designers to learn & grow together.",
                          "Helping students & professionals to learn & grow together by sharing knowledge & resources.",
                          "I also manage the community and its events & initiatives & took it from 0 to 100+ members in 2 days, students from 5+ countries joined the community."
                     ],
@@ -52,13 +52,13 @@
                     },
                     "experienceStatus": {
                          "startAt": "Nov. 2020",
-                         "endAt": "present"
+                         "endAt": "Present"
                     }
                }
           ]
      },
      {
-          "name": "work & internship experience",
+          "name": "Work & Internship Experience",
           "description": "I've worked with startups & companies as a freelancer & intern",
           "details": [
                {

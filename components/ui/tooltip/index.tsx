@@ -16,7 +16,7 @@ const Tooltip: React.FC<TooltipProps> = ({
   description,
   position = "top",
 }) => {
-  const [play] = useSound(tickSound);
+  const [play] = useSound(tickSound, { preload: true });
 
   const [showTooltip, setShowTooltip] = useState(false);
 

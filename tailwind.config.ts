@@ -10,7 +10,6 @@ const config: Config = {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        newsreader: ["Newsreader", "serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

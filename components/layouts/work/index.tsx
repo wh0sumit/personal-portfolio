@@ -67,7 +67,7 @@ const WorkItem: React.FC<WorkDetail> = ({
         <LinkText href={link} isExternal={isExternal}>
           {title}
         </LinkText>
-        <p className="text-sm">{description}</p>
+        <p className="text-md">{description}</p>
       </div>
     </>
   );
