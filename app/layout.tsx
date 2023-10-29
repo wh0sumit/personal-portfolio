@@ -32,6 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={poppins.className}>
+      <head>
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
+      </head>
       <body>
         <Layout>
           <ViewContainer>{children}</ViewContainer>
