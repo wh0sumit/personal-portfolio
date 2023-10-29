@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  font-family: theme("fontFamily.poppins");
+  font-family: var(--font-poppins);
   text-underline-offset: 0.1em;
   text-decoration-thickness: 0.1em;
   text-decoration-skip-ink: none;

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import ViewContainer from "../components/layouts/view-container";
 import Layout from "../components/layouts";
@@ -19,19 +19,19 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://wh0sumit.vercel.app"),
 };
 
+const poppins = Poppins({
+  subsets: ["latin-ext"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="en" className={poppins.className}>
       <body>
         <Layout>
           <ViewContainer>{children}</ViewContainer>
