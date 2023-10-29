@@ -9,7 +9,8 @@ export const metadata: Metadata = {
     default: "Sumit Singh",
     template: "%s | Sumit Singh",
   },
-  description: "Hey!, I am a frontend engineer with a focus on ux design.",
+  description:
+    "Hey!, I am an engineer and designer, I build beautiful interfaces and experiences for the web with a focus on ux design and branding.",
   twitter: {
     card: "summary_large_image",
     site: "@wh0sumit",

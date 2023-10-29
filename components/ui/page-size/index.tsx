@@ -17,7 +17,7 @@ const PageSize = () => {
 
   return (
     <>
-      <p className="sm:visible bottom-8 left-8 fixed hidden sm:block font-mono text-xs text-neutral-500">{`${width}X${height}`}</p>
+      <p className="sm:visible bottom-8 left-8 fixed hidden sm:block font-mono text-xs text-orange-500">{`${width}X${height}`}</p>
     </>
   );
 };
