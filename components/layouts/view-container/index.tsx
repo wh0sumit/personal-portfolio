@@ -25,7 +25,7 @@ const ViewContainer: React.FC<ViewContainerProps> = ({
     <div
       className={cn(
         "px-4 mx-auto max-w-2xl sm:px-6 border-dashed border-b py-24",
-        className
+        className,
       )}
       {...attr}
     >
@@ -35,4 +35,3 @@ const ViewContainer: React.FC<ViewContainerProps> = ({
 );
 
 export default ViewContainer;
-

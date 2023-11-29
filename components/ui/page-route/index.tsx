@@ -22,4 +22,3 @@ const PageRoute = () => {
 };
 
 export default PageRoute;
-

@@ -1,4 +1,3 @@
-import Button from "@/components/ui/button";
 import LinkText from "@/components/ui/link";
 import Tooltip from "@/components/ui/tooltip";
 import * as SiIcons from "react-icons/si";
@@ -111,4 +110,3 @@ const TechStack: React.FC = () => {
 };
 
 export default TechStack;
-

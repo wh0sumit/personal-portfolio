@@ -180,4 +180,3 @@ const TechFlex = () => {
 };
 
 export default TechFlex;
-

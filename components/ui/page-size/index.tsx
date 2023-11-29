@@ -23,4 +23,3 @@ const PageSize = () => {
 };
 
 export default PageSize;
-

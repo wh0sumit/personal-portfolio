@@ -57,7 +57,7 @@ const Tooltip: React.FC<TooltipProps> = ({
     if (showTooltip === true) {
       play();
     }
-  }, [showTooltip, play]);
+  }, [showTooltip]);
 
   return (
     <>
@@ -93,4 +93,3 @@ const Tooltip: React.FC<TooltipProps> = ({
 };
 
 export default Tooltip;
-

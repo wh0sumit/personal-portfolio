@@ -48,4 +48,3 @@ const TimeAndLocation = () => {
 };
 
 export default TimeAndLocation;
-
