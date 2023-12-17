@@ -42,9 +42,10 @@ const TimeAndLocation = () => {
       ) : (
         ""
       )} */}
-      <p className="font-mono text-xs capitalize text-orange-500">{time}</p>
+      <p className="font-mono text-xs capitalize text-neutral-500">{time}</p>
     </div>
   );
 };
 
 export default TimeAndLocation;
+

@@ -58,9 +58,9 @@ const TechIKnow: TechIKnow[] = [
 const TechStack: React.FC = () => {
   return (
     <div className="pb-6 my-10">
-      <h1 className="text-md font-medium mb-6 text-neutral-700">
+      <h1 className="mb-6 text-xl font-semibold text-neutral-500">
         Super cool tech stack i know about
-        <span className="text-neutral-500/90 font-normal ml-4  hidden sm:inline-block">
+        <span className="text-neutral-200 font-semibold ml-4  hidden sm:inline-block">
           :hover on the icons:
         </span>
       </h1>
@@ -75,14 +75,14 @@ const TechStack: React.FC = () => {
                   description={item.description}
                   position="top"
                 >
-                  <div className="p-3 rounded-full bg-neutral-50 my-3 cursor-pointer">
+                  <div className="p-3 rounded-full bg-neutral-800 my-3 cursor-pointer">
                     <div className="flex flex-col items-center justify-center text-2xl ">
                       {item.icon}
                     </div>
                   </div>
                 </Tooltip>
               ) : (
-                <h1 className="text-md font-medium mb-6 text-neutral-700">
+                <h1 className="text-xl font-semibold mb-6 text-neutral-700">
                   {item.name}
                 </h1>
               )}
@@ -92,16 +92,20 @@ const TechStack: React.FC = () => {
       </div>
 
       <div>
-        <p className="text-md text-neutral-500">
+        <p className="text-xl font-semibold text-neutral-500">
           This is not an exhaustive list.
         </p>
-        <p className="text-md text-neutral-500 mb-6 mt-2">
+        <p className="text-xl font-semibold text-neutral-500 mb-6 mt-2">
           I'm always learning new things and I try to keep this list updated.
         </p>
       </div>
-      <div className="text-md text-neutral-500">
+      <div className="text-xl font-semibold text-neutral-500">
         All the tech I know about is listed{" "}
-        <LinkText className="mb-6" href="/tech-i-know" isExternal={false}>
+        <LinkText
+          className="mb-6 text-xl font-semibold text-neutral-200"
+          href="/tech-i-know"
+          isExternal={false}
+        >
           here
         </LinkText>
       </div>
@@ -110,3 +114,4 @@ const TechStack: React.FC = () => {
 };
 
 export default TechStack;
+

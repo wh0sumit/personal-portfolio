@@ -23,10 +23,7 @@ const ViewContainer: React.FC<ViewContainerProps> = ({
   <>
     <PageRoute />
     <div
-      className={cn(
-        "px-4 mx-auto max-w-2xl sm:px-6 border-dashed border-b py-24",
-        className,
-      )}
+      className={cn("px-4 mx-auto max-w-2xl sm:px-6 py-24", className)}
       {...attr}
     >
       {children}
@@ -35,3 +32,4 @@ const ViewContainer: React.FC<ViewContainerProps> = ({
 );
 
 export default ViewContainer;
+

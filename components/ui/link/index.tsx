@@ -20,8 +20,8 @@ const LinkText: React.FunctionComponent<LinkTextProps> = ({
       <>
         <Link
           className={cn(
-            "underline group inline-block decoration-neutral-500/30 hover:decoration-neutral-500/60 text-neutral-500  items-center",
-            className,
+            "underline group inline-block decoration-purple-500 hover:decoration-purple-600 text-neutral-500  items-center",
+            className
           )}
           {...attr}
           target={target}
@@ -41,8 +41,8 @@ const LinkText: React.FunctionComponent<LinkTextProps> = ({
     <>
       <Link
         className={cn(
-          "underline decoration-neutral-500/30 hover:decoration-neutral-500/60 text-neutral-500",
-          className,
+          "underline decoration-purple-500 hover:decoration-purple-600 text-neutral-500",
+          className
         )}
         {...attr}
         target={target}
@@ -54,3 +54,4 @@ const LinkText: React.FunctionComponent<LinkTextProps> = ({
 };
 
 export default LinkText;
+

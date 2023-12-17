@@ -32,7 +32,7 @@ const WorkCategory: WorkCategory[] = [
     ],
   },
   {
-    name: "Projects",
+    name: "Projects.",
     details: [
       {
         title: "Invoicetor",
@@ -43,7 +43,7 @@ const WorkCategory: WorkCategory[] = [
     ],
   },
   {
-    name: "Building",
+    name: "Building.",
     details: [
       {
         title: "Crafts",
@@ -63,11 +63,15 @@ const WorkItem: React.FC<WorkDetail> = ({
 }) => {
   return (
     <>
-      <div className="mb-6 flex flex-col gap-2 text-neutral-500">
-        <LinkText href={link} isExternal={isExternal}>
+      <div className="mb-6 flex flex-col gap-2 ">
+        <LinkText
+          href={link}
+          isExternal={isExternal}
+          className=" text-xl font-semibold text-neutral-200"
+        >
           {title}
         </LinkText>
-        <p className="text-md">{description}</p>
+        <p className="text-xl font-semibold text-neutral-500">{description}</p>
       </div>
     </>
   );
@@ -80,10 +84,10 @@ const Work: React.FC = () => {
         {WorkCategory.map((item, index) => {
           return (
             <div key={index}>
-              <h1 className="text-md font-medium mb-6 text-neutral-700">
+              <h1 className="mb-6 text-xl font-semibold text-neutral-200">
                 {item.name}
               </h1>
-              <div className="">
+              <div>
                 {item.details.map((detail, index) => {
                   return (
                     <WorkItem
@@ -105,3 +109,4 @@ const Work: React.FC = () => {
 };
 
 export default Work;
+

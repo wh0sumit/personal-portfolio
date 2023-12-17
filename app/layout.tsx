@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import ViewContainer from "../components/layouts/view-container";
 import Layout from "../components/layouts";
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://wh0sumit.vercel.app"),
 };
 
-const poppins = Poppins({
+const manrope = Manrope({
   subsets: ["latin-ext"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en" className={manrope.className}>
       <head>
         <script async src="https://cdn.splitbee.io/sb.js"></script>
       </head>
@@ -43,3 +43,4 @@ export default function RootLayout({
     </html>
   );
 }
+

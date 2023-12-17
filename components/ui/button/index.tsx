@@ -12,8 +12,8 @@ const Button = ({ onClick, children, className }: ButtonProps) => {
     <button
       onClick={onClick}
       className={cn(
-        "px-4 py-2 rounded-xl  bg-neutral-50 font-medium text-sm hover:bg-neutral-100 hover:text-neutral-600 text-neutral-800 transition-colors border border-dashed duration-300",
-        className,
+        "px-4 py-2 rounded-xl  bg-neutral-50 font-semibold text-sm hover:bg-neutral-100 hover:text-neutral-600 text-neutral-800 transition-colors border border-dashed duration-300",
+        className
       )}
     >
       {children}
@@ -22,3 +22,4 @@ const Button = ({ onClick, children, className }: ButtonProps) => {
 };
 
 export default Button;
+

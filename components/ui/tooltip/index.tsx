@@ -71,7 +71,7 @@ const Tooltip: React.FC<TooltipProps> = ({
           <div
             style={{
               width: "max-content",
-              backgroundColor: "#f5f5f5",
+              backgroundColor: "#262626",
               padding: "0.5rem",
               borderRadius: "0.5rem",
               fontSize: "0.75rem",
@@ -81,9 +81,9 @@ const Tooltip: React.FC<TooltipProps> = ({
               ...(getTooltipStyle() as React.CSSProperties),
             }}
           >
-            <p className="text-xs font-medium">{text}</p>
+            <p className="text-xs font-semibold">{text}</p>
             {description && (
-              <p className="text-xs text-neutral-500">{description}</p>
+              <p className="text-xs text-neutral-400">{description}</p>
             )}
           </div>
         )}
@@ -93,3 +93,4 @@ const Tooltip: React.FC<TooltipProps> = ({
 };
 
 export default Tooltip;
+

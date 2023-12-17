@@ -8,12 +8,12 @@ const PageRoute = () => {
   const pathname = usePathname();
   return (
     pathname !== "/" && (
-      <div className=" top-[96px] left-[250px] fixed hidden lg:block text-neutral-500">
+      <div className=" top-[96px] left-[250px] fixed hidden lg:block text-neutral-500 font-semibold">
         <LinkText
           href={"/"}
           className="no-underline flex justify-center items-center"
         >
-          <Undo2 className="inline mr-2 mb-1 text-orange-500" size={16} />
+          <Undo2 className="inline mr-2 mb-1 text-neutral-500 " size={16} />
           home
         </LinkText>
       </div>
@@ -22,3 +22,4 @@ const PageRoute = () => {
 };
 
 export default PageRoute;
+
