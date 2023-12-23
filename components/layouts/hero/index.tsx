@@ -60,16 +60,23 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
         </div>
       </div>
       <p className="text-xl font-semibold text-neutral-500 mt-8">
-        In the past, I've developed{" "}
+        In the past, I've worked on{" "}
         <LinkText
-          href="https://www.invoicetor.vercel.app"
+          href="https://www.dunolabs.in"
           target="_blank"
           className="text-neutral-200 decoration-purple-500 hover:decoration-purple-600 transition-all duration-300"
         >
-          Invoicetor
+          dunolabs
         </LinkText>{" "}
-        - a simple invoicing app for freelancers and small scale businesses &
-        individuals.
+        (agency) and{" "}
+        <LinkText
+          href="https://www.foundersforge.club"
+          target="_blank"
+          className="text-neutral-200 decoration-purple-500 hover:decoration-purple-600 transition-all duration-300"
+        >
+          foundersforge
+        </LinkText>{" "}
+        (community) as a founder and frontend engineer.
       </p>
     </div>
   );

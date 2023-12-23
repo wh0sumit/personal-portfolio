@@ -75,8 +75,8 @@ const TechStack: React.FC = () => {
                   description={item.description}
                   position="top"
                 >
-                  <div className="p-3 rounded-full bg-neutral-800 my-3 cursor-pointer">
-                    <div className="flex flex-col items-center justify-center text-2xl ">
+                  <div className="p-4 rounded-full bg-neutral-800 my-3 cursor-pointer group hover:bg-neutral-700">
+                    <div className="flex flex-col items-center justify-center text-3xl text-neutral-400 group-hover:text-neutral-200 transition-all duration-200">
                       {item.icon}
                     </div>
                   </div>
@@ -100,7 +100,7 @@ const TechStack: React.FC = () => {
         </p>
       </div>
       <div className="text-xl font-semibold text-neutral-500">
-        All the tech I know about is listed{" "}
+        All the tech I know about is listed →{" "}
         <LinkText
           className="mb-6 text-xl font-semibold text-neutral-200"
           href="/tech-i-know"
