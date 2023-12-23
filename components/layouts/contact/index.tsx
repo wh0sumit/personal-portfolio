@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
           href="https://twitter.com/wh0sumit"
           target="_blank"
           className="text-neutral-200"
-          isExternal={true}
+          isExternal={false}
         >
           @wh0sumit
         </LinkText>{" "}
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
           href="mailto:wh0sumit.work@gmail.com"
           target="_blank"
           className="text-neutral-200"
-          isExternal={true}
+          isExternal={false}
         >
           wh0sumit.work@gmail.com
         </LinkText>

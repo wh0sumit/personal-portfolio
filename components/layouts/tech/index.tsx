@@ -57,7 +57,7 @@ const TechIKnow: TechIKnow[] = [
 
 const TechStack: React.FC = () => {
   return (
-    <div className="pb-6 my-10">
+    <div>
       <h1 className="mb-6 text-xl font-semibold text-neutral-500">
         Super cool tech stack i know about
         <span className="text-neutral-200 font-semibold ml-4  hidden sm:inline-block">

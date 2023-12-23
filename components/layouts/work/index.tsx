@@ -63,7 +63,7 @@ const WorkItem: React.FC<WorkDetail> = ({
 }) => {
   return (
     <>
-      <div className="mb-6 flex flex-col gap-2 ">
+      <div className=" flex flex-col gap-2 ">
         <LinkText
           href={link}
           isExternal={isExternal}
