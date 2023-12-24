@@ -59,6 +59,9 @@ const Tooltip: React.FC<TooltipProps> = ({
     }
   }, [showTooltip]);
 
+  const isSmallScreen =
+    typeof window !== "undefined" && window.innerWidth < 768;
+
   return (
     <>
       <div
@@ -67,7 +70,7 @@ const Tooltip: React.FC<TooltipProps> = ({
         onMouseLeave={handleMouseLeave}
       >
         {children}
-        {showTooltip && (
+        {showTooltip && !isSmallScreen && (
           <div
             style={{
               width: "max-content",

@@ -1,5 +1,6 @@
 import LinkText from "@/components/ui/link";
 import Tooltip from "@/components/ui/tooltip";
+import React from "react";
 import * as SiIcons from "react-icons/si";
 
 interface TechIKnow {
@@ -76,7 +77,7 @@ const TechStack: React.FC = () => {
                   position="top"
                 >
                   <div className="p-4 rounded-full bg-neutral-800 my-3 cursor-pointer group hover:bg-neutral-700">
-                    <div className="flex flex-col items-center justify-center text-3xl text-neutral-400 group-hover:text-neutral-200 transition-all duration-200">
+                    <div className="flex flex-col items-center justify-center text-xl lg:text-3xl text-neutral-400 group-hover:text-neutral-200 transition-all duration-200">
                       {item.icon}
                     </div>
                   </div>

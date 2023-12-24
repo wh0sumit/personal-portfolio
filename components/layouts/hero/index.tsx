@@ -11,7 +11,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ className }) => {
   return (
     <div className={cn(className + "border-b border-dashed pb-6")}>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ">
         <div className="col-span-2">
           <div>
             <div className="heading">
@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
               web with a focus on ux design and branding for the past 2 years.
             </p>
 
-            <p className="mt-4">
+            <p className="mt-4 text-neutral-200">
               looking for a full-time role as a frontend engineer. <br />
             </p>
             <p className="mt-4">
@@ -46,14 +46,14 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
             </p>
           </div>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 hidden lg:block p-4">
           <Image
             src="/media/profile.jpg"
             width={500}
             height={500}
             className="outline-none
             hover:ring-8 ring-gradient-to-b from-neutral-400 to-neutral-800 ring-neutral-700 border-none hover:ring-offset-4 ring-offset-neutral-600 ring-opacity-50 cursor-pointer
-            transition-all duration-300 rounded-xl h-full"
+            transition-all duration-300 rounded-xl h-full "
             alt="Sumit Singh"
             priority
           />
