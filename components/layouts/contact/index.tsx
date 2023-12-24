@@ -24,7 +24,7 @@ const ContactCategory: ContactCategory[] = [
     details: [
       {
         contactType: "Sumit Singh",
-        contactLink: "https://www.linkedin.com/in/sumit-ghosh-1a2b3c4d/",
+        contactLink: "https://www.linkedin.com/in/wh0sumit",
       },
     ],
   },
